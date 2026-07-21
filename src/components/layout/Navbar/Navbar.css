@@ -1,0 +1,148 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    background: var(--white);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: all .35s ease;
+}
+
+.navbar-container {
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.logo img {
+
+    width: 70px;
+
+}
+
+.logo-text h2 {
+
+    font-size: 1.4rem;
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+}
+
+.logo-text span {
+
+    font-size: .82rem;
+
+    color: var(--gray);
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.nav-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+.nav-menu a {
+
+    color: var(--primary);
+    font-size: .95rem;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+.nav-menu a:hover {
+
+    color: var(--accent);
+
+}
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.nav-dropdown {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+}
+
+.dropdown-icon {
+
+    font-size: .72rem;
+
+    color: var(--primary);
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.contact-btn {
+
+    padding: 12px 30px;
+
+    border-radius: 50px;
+
+    background: var(--highlight);
+
+    color: white;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+    font-size: .95rem;
+
+}
+
+.contact-btn:hover {
+
+    background: var(--accent);
+
+}
