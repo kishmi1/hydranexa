@@ -2,6 +2,8 @@ import "./Hero.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -36,33 +38,52 @@ export default function Hero() {
 
             <div className="container hero-content">
 
-              <span className="hero-subtitle">
-                Renewable Energy for Nepal
-              </span>
+             <motion.span
+  className="hero-subtitle"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
+  Renewable Energy for Nepal
+</motion.span>
 
-              <h1>
-                Powering Tomorrow Through
-                <br />
-                Sustainable Hydropower
-              </h1>
+             <motion.h1
+  initial={{ opacity: 0, y: 60 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.2 }}
+>
+  Powering Tomorrow Through
+  <br />
+  Sustainable Hydropower
+</motion.h1>
 
-              <p>
-                HydraNexa is building Nepal's future through innovative
-                hydropower projects, reliable clean energy, and sustainable
-                infrastructure.
-              </p>
+             <motion.p
+  initial={{ opacity: 0, y: 60 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.4 }}
+>
+  HydraNexa is building Nepal's future through innovative
+  hydropower projects, reliable clean energy, and sustainable
+  infrastructure.
+</motion.p>
 
-              <div className="hero-buttons">
+             <motion.div
+  className="hero-buttons"
+  initial={{ opacity: 0, y: 60 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.6 }}
+>
+ <Link to="/projects" className="primary-btn">
+  Explore Projects
+</Link>
 
-                <button className="primary-btn">
-                  Explore Projects
-                </button>
-
-                <button className="secondary-btn">
-                  Investor Relations
-                </button>
-
-              </div>
+  <Link
+  to="/investor/financial-highlights"
+  className="secondary-btn"
+>
+  Investor Relations
+</Link>
+</motion.div>
 
             </div>
 
