@@ -1,15 +1,15 @@
-/* ===========================
+/*
    FEATURED PROJECTS
-=========================== */
+ */
 
 .featured-projects {
     padding: 100px 0;
     background: #ffffff;
 }
 
-/* ===========================
+/*
    SECTION HEADER
-=========================== */
+ */
 
 .section-header {
     max-width: 700px;
@@ -40,9 +40,9 @@
     font-size: 1rem;
 }
 
-/* ===========================
+/*
    GRID
-=========================== */
+ */
 
 .projects-grid {
     display: grid;
@@ -50,9 +50,9 @@
     gap: 35px;
 }
 
-/* ===========================
+/*
    CARD
-=========================== */
+ */
 
 .project-card {
     background: #fff;
@@ -66,9 +66,9 @@
     transform: translateY(-10px);
 }
 
-/* ===========================
+/*
    IMAGE
-=========================== */
+ */
 
 .project-image {
     position: relative;
@@ -87,9 +87,8 @@
     transform: scale(1.08);
 }
 
-/* ===========================
-   BADGE
-=========================== */
+/*
+   BADGE */
 
 .capacity-badge {
     position: absolute;
@@ -103,9 +102,9 @@
     font-weight: 700;
 }
 
-/* ===========================
+/*
    CONTENT
-=========================== */
+ */
 
 .project-content {
     padding: 28px;
@@ -129,9 +128,9 @@
     margin-bottom: 25px;
 }
 
-/* ===========================
+/*
    BUTTON
-=========================== */
+ */
 
 .project-btn {
     display: inline-flex;
@@ -150,9 +149,9 @@
     background: var(--accent);
 }
 
-/* ===========================
+/*
    RESPONSIVE
-=========================== */
+ */
 
 @media (max-width: 992px) {
 
