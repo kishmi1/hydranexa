@@ -149,3 +149,33 @@ export const investorHighlights = [
             "Ensuring transparency, accountability and ethical business practices.",
     },
 ];
+
+export const latestNews = [
+    {
+        id: 1,
+        image: "news1",
+        category: "Company News",
+        date: "July 20, 2026",
+        title: "HydraNexa Begins Construction of New Hydropower Project",
+        description:
+            "Construction has officially started on our latest renewable energy project aimed at increasing Nepal's clean electricity generation.",
+    },
+    {
+        id: 2,
+        image: "news2",
+        category: "Sustainability",
+        date: "July 15, 2026",
+        title: "Community Tree Plantation Program Successfully Completed",
+        description:
+            "More than 5,000 trees were planted with local communities as part of our environmental conservation initiative.",
+    },
+    {
+        id: 3,
+        image: "news3",
+        category: "Investor Relations",
+        date: "July 10, 2026",
+        title: "Annual Financial Report 2026 Released",
+        description:
+            "HydraNexa publishes its annual financial report highlighting stable growth and long-term investment opportunities.",
+    },
+];

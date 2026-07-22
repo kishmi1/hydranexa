@@ -4,6 +4,8 @@ import CompanyOverview from "../../components/home/CompanyOverview/CompanyOvervi
 import FeaturedProjects from "../../components/home/FeaturedProjects/FeaturedProjects";
 import Sustainability from "../../components/home/Sustainability/Sustainability";
 import InvestorHighlights from "../../components/home/InvestorHighlights/InvestorHighlights";
+import LatestNews from "../../components/home/LatestNews/LatestNews";
+import CTASection from "../../components/home/CTASection/CTASection";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <FeaturedProjects />
       <Sustainability/>
       <InvestorHighlights/>
+      <LatestNews/>
+      <CTASection/>
     </>
   );
 }
