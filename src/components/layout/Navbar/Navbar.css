@@ -1,3 +1,7 @@
+/* ==========================
+   NAVBAR
+========================== */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -6,112 +10,155 @@
     z-index: 999;
 
     background: var(--white);
-
     box-shadow: var(--shadow-sm);
 
     transition: all .35s ease;
 }
 
 .navbar-container {
-
     height: 90px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
 }
 
 
+/* ==========================
+   LOGO
+========================== */
+
 .logo {
-
     display: flex;
-
     align-items: center;
-
     gap: 12px;
-
 }
 
 .logo img {
-
     width: 70px;
-
 }
 
 .logo-text h2 {
-
     font-size: 1.4rem;
-
     color: var(--primary);
-
     font-weight: 700;
-
 }
 
 .logo-text span {
-
     font-size: .82rem;
-
     color: var(--gray);
 }
 
 
+/* ==========================
+   NAV MENU
+========================== */
 
 .nav-menu {
-
     display: flex;
-
     align-items: center;
-
     gap: 30px;
-
 }
 
 .nav-menu a {
+    text-decoration: none;
 
     color: var(--primary);
-    font-size: .95rem;
 
+    font-size: .95rem;
     font-weight: 500;
 
     transition: .3s;
-
 }
 
 .nav-menu a:hover {
-
     color: var(--accent);
-
 }
 
 
+/* ==========================
+   DROPDOWN
+========================== */
 
 .nav-dropdown {
+    position: relative;
 
     display: flex;
-
     align-items: center;
-
     gap: 6px;
 
     cursor: pointer;
-
 }
 
 .dropdown-icon {
-
     font-size: .72rem;
+    transition: .3s;
+}
+
+.nav-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/* ==========================
+   DROPDOWN MENU
+========================== */
+
+.dropdown-menu {
+    position: absolute;
+
+    top: calc(100% + 18px);
+    left: 0;
+
+    width: 240px;
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .12);
+
+    padding: 12px 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: .3s ease;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 12px 22px;
 
     color: var(--primary);
+
+    font-size: .92rem;
+
+    transition: .3s;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(0, 161, 154, .08);
+
+    color: var(--accent);
+
+    padding-left: 30px;
 }
 
 
+/* ==========================
+   CONTACT BUTTON
+========================== */
 
 .contact-btn {
-
     padding: 12px 30px;
 
     border-radius: 50px;
@@ -125,11 +172,37 @@
     transition: .3s;
 
     font-size: .95rem;
-
 }
 
 .contact-btn:hover {
-
     background: var(--accent);
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px) {
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .navbar-container {
+        height: 80px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
 
 }

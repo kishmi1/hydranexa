@@ -1,7 +1,8 @@
+
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
-
+import { navItems } from "../../../data/navData";
 import logo from "../../../assets/logo/logo.png";
 
 export default function Navbar() {
@@ -11,13 +12,17 @@ export default function Navbar() {
       <div className="container navbar-container">
 
         {/* Logo */}
+
         <Link to="/" className="logo">
 
           <img src={logo} alt="HydraNexa Logo" />
 
           <div className="logo-text">
+
             <h2>HydraNexa</h2>
+
             <span>Powering Tomorrow</span>
+
           </div>
 
         </Link>
@@ -26,81 +31,54 @@ export default function Navbar() {
 
         <nav className="nav-menu">
 
-          <Link to="/">Home</Link>
+          {navItems.map((item) => (
 
-          <div className="nav-dropdown">
+            item.children ? (
 
-            <Link to="/about/company-overview">
-              About
-            </Link>
+              <div
+                className="nav-dropdown"
+                key={item.title}
+              >
 
-            <FaChevronDown className="dropdown-icon" />
+                <Link to={item.children[0].path}>
+                  {item.title}
+                </Link>
 
-          </div>
+                <FaChevronDown className="dropdown-icon" />
 
-          <div className="nav-dropdown">
+                <div className="dropdown-menu">
 
-            <Link to="/projects">
-              Projects
-            </Link>
+                  {item.children.map((child) => (
 
-            <FaChevronDown className="dropdown-icon" />
+                    <Link
+                      key={child.title}
+                      to={child.path}
+                    >
+                      {child.title}
+                    </Link>
 
-          </div>
+                  ))}
 
-          <div className="nav-dropdown">
+                </div>
 
-            <Link to="/investor/financial-highlights">
-              Investor Relations
-            </Link>
+              </div>
 
-            <FaChevronDown className="dropdown-icon" />
+            ) : (
 
-          </div>
+              <Link
+                key={item.title}
+                to={item.path}
+              >
+                {item.title}
+              </Link>
 
-          <div className="nav-dropdown">
+            )
 
-            <Link to="/news/latest-news">
-              News & Events
-            </Link>
-
-            <FaChevronDown className="dropdown-icon" />
-
-          </div>
-
-          <div className="nav-dropdown">
-
-            <Link to="/careers/life-at-hydranexa">
-              Careers
-            </Link>
-
-            <FaChevronDown className="dropdown-icon" />
-
-          </div>
-
-          <div className="nav-dropdown">
-
-            <Link to="/ebidding/active-tenders">
-              E-Bidding
-            </Link>
-
-            <FaChevronDown className="dropdown-icon" />
-
-          </div>
-
-          <div className="nav-dropdown">
-
-            <Link to="/contact/contact-us">
-              Contact
-            </Link>
-
-            <FaChevronDown className="dropdown-icon" />
-
-          </div>
+          ))}
 
         </nav>
 
-        {/* CTA Button */}
+        {/* Contact Button */}
 
         <Link
           to="/contact/contact-us"
@@ -114,3 +92,4 @@ export default function Navbar() {
     </header>
   );
 }
+
