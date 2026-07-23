@@ -12,6 +12,13 @@ import LeadershipTeam from "../pages/About/LeadershipTeam/LeadershipTeam";
 import CompanyHistory from "../pages/About/CompanyHistory/CompanyHistory";
 import AwardsRecognition from "../pages/About/AwardsRecognition/AwardsRecognition";
 
+// Projects
+import AllProjects from "../pages/projects/AllProjects/AllProjects";
+import OngoingProjects from "../pages/projects/OngoingProjects/OngoingProjects";
+import CompletedProjects from "../pages/projects/CompletedProjects/CompletedProjects";
+import UpcomingProjects from "../pages/projects/UpcomingProjects/UpcomingProjects";
+import ProjectMap from "../pages/projects/ProjectMap/ProjectMap";
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -19,6 +26,8 @@ export default function AppRoutes() {
       <Route element={<MainLayout />}>
 
         <Route path="/" element={<Home />} />
+
+        {/* About */}
 
         <Route
           path="/about/company-overview"
@@ -50,6 +59,29 @@ export default function AppRoutes() {
           element={<AwardsRecognition />}
         />
 
+        {/* Projects */}
+
+        <Route
+          path="/projects"
+          element={<AllProjects />}
+        />
+        <Route
+  path="/projects/ongoing"
+  element={<OngoingProjects />}
+/>
+
+<Route
+  path="/projects/completed"
+  element={<CompletedProjects />}
+/>
+<Route
+  path="/projects/upcoming"
+  element={<UpcomingProjects />}
+/>
+<Route
+  path="/projects/project-map"
+  element={<ProjectMap />}
+/>
       </Route>
 
     </Routes>
