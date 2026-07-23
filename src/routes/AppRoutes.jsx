@@ -5,12 +5,12 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home/Home";
 
 // About
-import CompanyOverview from "../pages/about/CompanyOverview/CompanyOverview";
-import VisionMission from "../pages/about/VisionMission/VisionMission";
-import BoardOfDirectors from "../pages/about/BoardOfDirectors/BoardOfDirectors";
-import LeadershipTeam from "../pages/about/LeadershipTeam/LeadershipTeam";
-import CompanyHistory from "../pages/about/CompanyHistory/CompanyHistory";
-import AwardsRecognition from "../pages/about/AwardsRecognition/AwardsRecognition";
+import CompanyOverview from "../pages/About/CompanyOverview/CompanyOverview";
+import VisionMission from "../pages/About/VisionMission/VisionMission";
+import BoardOfDirectors from "../pages/About/BoardOfDirectors/BoardOfDirectors";
+import LeadershipTeam from "../pages/About/LeadershipTeam/LeadershipTeam";
+import CompanyHistory from "../pages/About/CompanyHistory/CompanyHistory";
+import AwardsRecognition from "../pages/About/AwardsRecognition/AwardsRecognition";
 
 export default function AppRoutes() {
   return (
