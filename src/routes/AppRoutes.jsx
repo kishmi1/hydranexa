@@ -19,6 +19,18 @@ import CompletedProjects from "../pages/Projects/CompletedProjects/CompletedProj
 import UpcomingProjects from "../pages/Projects/UpcomingProjects/UpcomingProjects";
 import ProjectMap from "../pages/Projects/ProjectMap/ProjectMap";
 
+import FinancialHighlights from "../pages/investor/FinancialHighlights/FinancialHighlights";
+import AnnualReports from "../pages/investor/AnnualReports/AnnualReports";
+import ShareInformation from "../pages/investor/ShareInformation/ShareInformation";
+import CorporateGovernance from "../pages/investor/CorporateGovernance/CorporateGovernance";
+import Downloads from "../pages/investor/Downloads/Downloads";
+
+import LatestNews from "../pages/news/LatestNews/LatestNews";
+import Events from "../pages/news/Events/Events";
+import PressReleases from "../pages/news/PressReleases/PressReleases";
+import MediaGallery from "../pages/news/MediaGallery/MediaGallery";
+import MediaGallery from "../pages/news/MediaGallery/MediaGallery";
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -81,6 +93,55 @@ export default function AppRoutes() {
 <Route
   path="/projects/project-map"
   element={<ProjectMap />}
+/>
+
+<Route
+  path="/investor/financial-highlights"
+  element={<FinancialHighlights />}
+/>
+
+<Route
+  path="/investor/annual-reports"
+  element={<AnnualReports />}
+/>
+
+<Route
+  path="/investor/share-information"
+  element={<ShareInformation />}
+/>
+
+<Route
+  path="/investor/corporate-governance"
+  element={<CorporateGovernance />}
+/>
+<Route
+  path="/investor/downloads"
+  element={<Downloads />}
+/>
+
+<Route
+  path="/news/latest-news"
+  element={<LatestNews />}
+/>
+
+<Route
+  path="/news/events"
+  element={<Events />}
+/>
+
+<Route
+  path="/news/press-releases"
+  element={<PressReleases />}
+/>
+
+<Route
+  path="/news/media-gallery"
+  element={<MediaGallery />}
+/>
+
+<Route
+  path="/news/media-gallery"
+  element={<MediaGallery />}
 />
       </Route>
 

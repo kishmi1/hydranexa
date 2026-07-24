@@ -109,28 +109,6 @@ export const navItems = [
     },
 
     {
-        title: "Careers",
-        children: [
-            {
-                title: "Life at HydraNexa",
-                path: "/careers/life-at-hydranexa",
-            },
-            {
-                title: "Current Openings",
-                path: "/careers/current-openings",
-            },
-            {
-                title: "Internship Program",
-                path: "/careers/internship",
-            },
-            {
-                title: "Apply Now",
-                path: "/careers/apply-now",
-            },
-        ],
-    },
-
-    {
         title: "E-Bidding",
         children: [
             {
@@ -155,6 +133,30 @@ export const navItems = [
             },
         ],
     },
+
+
+    {
+        title: "Careers",
+        children: [
+            {
+                title: "Life at HydraNexa",
+                path: "/careers/life-at-hydranexa",
+            },
+            {
+                title: "Current Openings",
+                path: "/careers/current-openings",
+            },
+            {
+                title: "Internship Program",
+                path: "/careers/internship",
+            },
+            {
+                title: "Apply Now",
+                path: "/careers/apply-now",
+            },
+        ],
+    },
+
 
     {
         title: "Contact",
