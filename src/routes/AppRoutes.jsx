@@ -29,7 +29,6 @@ import LatestNews from "../pages/news/LatestNews/LatestNews";
 import Events from "../pages/news/Events/Events";
 import PressReleases from "../pages/news/PressReleases/PressReleases";
 import MediaGallery from "../pages/news/MediaGallery/MediaGallery";
-import MediaGallery from "../pages/news/MediaGallery/MediaGallery";
 
 export default function AppRoutes() {
   return (
