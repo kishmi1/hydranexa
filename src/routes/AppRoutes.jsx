@@ -139,10 +139,7 @@ export default function AppRoutes() {
   element={<MediaGallery />}
 />
 
-<Route
-  path="/news/media-gallery"
-  element={<MediaGallery />}
-/>
+
       </Route>
 
     </Routes>
